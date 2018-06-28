@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<style>
+			.mui-input-group:first-child {
+				margin-top: 20px;
+			}
+			.mui-input-group label {
+				width: 22%;
+			}
+			.mui-input-row label~input,
+			.mui-input-row label~select,
+			.mui-input-row label~textarea {
+				width: 78%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div align="center">
+			<img src="img/logo.jpg"/>
+		</div>
+		<p align="center">注册个帐号，加入我们吧！</p>
+		<div class="mui-content">
+			<form class="mui-input-group" id="form1" method="post" action="info.php">
+				<div class="mui-input-row">
+					<label>账号</label>
+					<input name="account" type="text" class="mui-input-clear mui-input" placeholder="请输入账号">
+				</div>
+				<div class="mui-input-row">
+					<label>密码</label>
+					<input name="password" type="password" class="mui-input-clear mui-input" placeholder="请输入密码">
+				</div>
+				<div class="mui-input-row">
+					<label>确认</label>
+					<input name="password_confirm" type="password" class="mui-input-clear mui-input" placeholder="请确认密码">
+				</div>
+				<div class="mui-input-row">
+					<label>邮箱</label>
+					<input name="email" type="email" class="mui-input-clear mui-input" placeholder="请输入邮箱">
+				</div>
+				<button class="mui-btn mui-btn-block mui-btn-primary" style="padding: 13px;">注册</button>
+			</form>
+			
+			
+			
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+		</script>
+	</body>
+
+</html>

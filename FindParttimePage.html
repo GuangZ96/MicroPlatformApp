@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	</head>
+	<body>
+		<div data-role = "page" id="PartObj">
+			<header class="mui-bar mui-bar-nav">
+				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" onclick="history.go(-1)"></a>
+				<h1 class="mui-title">兼职消息发布页面</h1>
+			</header>
+			<div class="mui-content" style="margin-top: 25px;">
+				<form class="mui-input-group" method="post" action="RPRI.php">
+					<div class="mui-input-row">
+						<input type="text" name="parttitle" placeholder="请输入标题">
+					</div>
+					<div class="mui-input-row" style="margin-top: 10px;height: 250px;">
+						<textarea id="textarea" rows="25" placeholder="请输入详细信息" name="partdetails"></textarea>
+					</div>
+					<div class="mui-button-row">
+						<button id="PartBtn" class="mui-btn mui-btn-primary" style="width: 100%;">确认并发送</button>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	</body>
+</html>

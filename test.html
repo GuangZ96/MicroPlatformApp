@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.mui-input-group {
+				margin-top: 20px;
+			}
+			
+			.mui-input-group:first-child {
+				margin-top: 20px;
+			}
+			
+			.mui-input-group label {
+				width: 22%;
+			}
+			
+			.mui-input-row label~input,
+			.mui-input-row label~select,
+			.mui-input-row label~textarea {
+				width: 78%;
+			}
+			
+			.mui-content-padded {
+				margin-top: 25px;
+			}
+			
+			.mui-btn {
+				padding: 10px;
+			}
+			
+			.link-area {
+				display: block;
+				margin-top: 25px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div align="center">
+			<img src="img/logo.jpg"/>
+		</div>
+		<p align="center">登录后可对信息进行管理</p>
+		<div class="mui-content">
+			<form id='login-form-admin' class="mui-input-group" method="post" action="login-select-admin.php">
+				<div class="mui-input-row">
+					<label>账号</label>
+					<input name="adaccount" type="text" class="mui-input-clear mui-input" placeholder="请输入账号">
+				</div>
+				<div class="mui-input-row">
+					<label>密码</label>
+					<input name="adpassword" type="password" class="mui-input-clear mui-input" placeholder="请输入密码">
+				</div>
+				<button id='login-admin' class="mui-btn mui-btn-block mui-btn-primary">登录</button>
+			</form>
+		</div>
+		<div align="center">
+			<input type="radio" name="originuser" onclick="window.location.href='login.html'"/>普通用户
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="opera"/>运维人员
+		</div>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	</head>
+
+	<body>
+		<div data-role = "page" id="LostObj">
+			<header class="mui-bar mui-bar-nav">
+				
+				<h1 class="mui-title">物品消息发布页面</h1>
+			</header>
+			<div class="mui-content" style="margin-top: 25px;">
+				<form id='SaveObjInfoForm' class="mui-input-group" method="post" action="ROBI.php" enctype="multipart/form-data">
+					<div class="mui-input-row">
+						<input type="text" name="title" placeholder="请输入标题">
+					</div>
+					<div class="mui-input-row" style="margin-top: 15px;">
+						<input type="file" accept="image/*" id="obj_img" name="file" style="width: 100%;"/>
+					</div>
+					<div class="mui-input-row" style="margin-top: 10px;height: 250px;">
+						<textarea id="textarea" rows="15" placeholder="请输入详细信息" name="details"></textarea>
+					</div>
+					<div class="mui-button-row">
+						<button id="ObjInfoSubmit" class="mui-btn mui-btn-outlined mui-btn-blue" style="width: 100%;">确认并发送</button>
+						
+					</div>
+				</form>
+			</div>
+			
+		</div>
+		
+		
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			mui.init();
+		</script>
+	</body>
+
+</html>

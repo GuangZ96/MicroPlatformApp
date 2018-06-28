@@ -1,0 +1,74 @@
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"guide.html",
+			"home.html"
+		]
+	},
+	"guide.html": {
+		"resources": [
+			"PNG/page1.png",
+			"PNG/page2.png",
+			"PNG/lastpng.png",
+			"PNG/page3.png",
+			"reg.html",
+			"login.html"
+		],
+		"refer": [
+			"home.html",
+			"reg.html",
+			"login.html"
+		]
+	},
+	"reg.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"css/style.css",
+			"info.php",
+			"img/logo.jpg"
+		],
+		"refer": [
+			"info.php"
+		]
+	},
+	"login.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"login-select.php",
+			"info.php"
+		],
+		"refer": [
+			"login-select.php",
+			"info.php"
+		]
+	},
+	"info.php": {
+		"resources": [
+			"PNG/tick.png",
+			"login.html"
+		],
+		"refer": [
+			"login.html"
+		]
+	},
+	"login-select.php": {
+		"resources": [
+			"home.html"
+		],
+		"refer": [
+			"home.html"
+		]
+	},
+	"home.html": {
+		"resources": [
+			"login-select.php"
+		],
+		"refer": [
+			"login-select.php"
+		]
+	}
+}
